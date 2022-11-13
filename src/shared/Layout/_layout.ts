@@ -19,4 +19,18 @@ export const Section = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(${BackgroundMain});
+  overflow-y: auto;
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 10px;
+  }
 `;

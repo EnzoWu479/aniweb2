@@ -13,7 +13,7 @@ const AppRoutes = () => {
         <Route path="/register" exact component={Register} />
 
         <Route path="/entretenimento" exact component={Entretenimento} />
-        <Route path="/profile" exact component={Profile} />
+        <Route path="/profile/:section?" exact component={Profile} />
       </Switch>
     </BrowserRouter>
   );

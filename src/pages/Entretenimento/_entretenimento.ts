@@ -4,22 +4,10 @@ export const ContainerGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
-  padding: 0 60px 0 0;
+  padding: 0;
+  margin-right: 40px;
   height: 100%;
   box-sizing: border-box;
-  ::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: #ffaadf;
-    border-radius: 10px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: #cccccc;
-    border-radius: 10px;
-  }
   @media (max-width: 1280px) {
     grid-template-columns: 1fr 1fr 1fr;
   }

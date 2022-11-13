@@ -18,6 +18,8 @@ export default () => {
   const handleLogOut = () => {
     history.push("/");
   };
+  const isActive = (href: string) =>
+    window.location.pathname.includes(`${href}`);
   return (
     <>
       <BlackBackground
@@ -29,6 +31,7 @@ export default () => {
           <Logo minimized={!isExpanded} size={isExpanded ? 46 : 30} />
           {OptionsLateralBar.map((item) => (
             <OptionsButton
+              active={isActive(item.href)}
               onClick={() => history.push(item.href)}
               key={item.name}
             >

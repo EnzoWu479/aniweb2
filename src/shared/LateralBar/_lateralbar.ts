@@ -5,12 +5,12 @@ interface Props {
   isExpanded: boolean;
 }
 export const Container = styled.nav<Props>`
-  left: 0;
-  width: 60px;
-  background-color: #d9d9d9;
   position: fixed;
+  left: 0;
   top: 0;
   bottom: 0;
+  width: 60px;
+  background-color: #d9d9d9;
   display: flex;
   flex-direction: column;
   gap: 1px;
@@ -18,6 +18,7 @@ export const Container = styled.nav<Props>`
   padding: 10px 0;
   transition: all ease 0.3s;
   align-items: center;
+  z-index: 21;
   width: ${({ isExpanded }) => (isExpanded ? "250px" : "60px")};
 `;
 export const ContainerTop = styled.div`
@@ -39,7 +40,7 @@ export const OptionsButton = styled.button<OptionsProps>`
   align-items: center;
   width: 100%;
   color: #292f39;
-  opacity: ${({ active }) => (active ? "1" : "0.9")};
+  filter: brightness(${({ active }) => (active ? "10%" : "100%")});
   svg {
     margin: 0 15px;
     font-size: 24px;
@@ -60,6 +61,7 @@ export const BlackBackground = styled.div<Props>`
   right: 0;
   left: 0;
   background-color: #0005;
+  z-index: 20;
   ${({ isExpanded }) => !isExpanded && "display: none;"}
 `;
 export const MinimizeBtn = styled(BsFillArrowRightCircleFill)<Props>`
