@@ -30,7 +30,7 @@ export default [
   {
     icon: FaUserAlt,
     name: "Perfil",
-    href: "",
+    href: "/profile",
   },
   {
     icon: BsClockHistory,

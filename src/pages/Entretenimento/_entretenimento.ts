@@ -4,7 +4,7 @@ export const ContainerGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
-  padding: 0 100px 0 0;
+  padding: 0 60px 0 0;
   height: 100%;
   box-sizing: border-box;
   ::-webkit-scrollbar {

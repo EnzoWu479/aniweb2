@@ -13,7 +13,7 @@ export const Container = styled.div`
 export const Section = styled.section`
   padding: 25px 25px 5px 25px;
   margin-left: 60px;
-  width: 100%;
+  width: calc(100vw - 60px);
   height: 100vh;
   box-sizing: border-box;
   background-repeat: no-repeat;
