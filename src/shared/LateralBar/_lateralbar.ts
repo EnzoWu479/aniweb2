@@ -19,12 +19,11 @@ export const Container = styled.nav<Props>`
   transition: all ease 0.3s;
   align-items: center;
   z-index: 21;
-  width: ${({ isExpanded }) => (isExpanded ? "250px" : "60px")};
+  width: ${({ isExpanded }) => (isExpanded ? "300px" : "60px")};
 `;
 export const ContainerTop = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 14px;
   width: 100%;
   align-items: center;
 `;
@@ -41,6 +40,7 @@ export const OptionsButton = styled.button<OptionsProps>`
   width: 100%;
   color: #292f39;
   filter: brightness(${({ active }) => (active ? "10%" : "100%")});
+  margin-bottom: 14px;
   svg {
     margin: 0 15px;
     font-size: 24px;
@@ -53,6 +53,23 @@ export const OptionText = styled.p<Props>`
   transition: all ease 0.3s;
   text-align: start;
   font-size: ${({ isExpanded }) => (isExpanded ? "17px" : "0")};
+`;
+interface ChildProps {
+  opened: boolean;
+}
+export const OptionChild = styled(OptionsButton)<ChildProps>`
+  svg {
+    margin: 0 18px;
+    font-size: 18px;
+    transition: all ease 0.3s;
+  }
+  * {
+    ${({ opened }) => (!opened && "font-size: 0 !important; height: 0 !important; overflow-y: hidden;")}
+  }
+  margin-bottom: ${({ opened }) => (opened ? "10px" : "0")} !important;
+`;
+export const OptionTextChild = styled(OptionText)`
+  font-size: ${({ isExpanded }) => (isExpanded ? "15px" : "0")};
 `;
 export const BlackBackground = styled.div<Props>`
   position: fixed;

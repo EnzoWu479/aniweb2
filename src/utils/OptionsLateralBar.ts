@@ -1,10 +1,8 @@
+import { AiFillEye, AiFillLike, AiFillYoutube, AiOutlineInstagram } from "react-icons/ai";
 import {
-  BsClockHistory,
   BsFillHouseFill,
-  BsFillPlusSquareFill,
 } from "react-icons/bs";
-import { MdMovie } from "react-icons/md";
-import { FaRocket, FaUserAlt } from "react-icons/fa";
+import { FaTiktok, FaUserPlus } from "react-icons/fa";
 
 export default [
   {
@@ -13,28 +11,70 @@ export default [
     href: "/home",
   },
   {
-    icon: MdMovie,
-    name: "Entretenimento",
+    icon: AiOutlineInstagram,
+    name: "Instagram",
     href: "/entretenimento",
+    child: [
+      {
+        icon: FaUserPlus,
+        name: "Seguidores",
+        href: ""
+      },
+      {
+        icon: AiFillLike,
+        name: "Likes",
+        href: ""
+      },
+      {
+        icon: AiFillEye,
+        name: "Vizualizações",
+        href: ""
+      },
+    ]
   },
   {
-    icon: FaRocket,
-    name: "Lançamento",
-    href: "",
+    icon: FaTiktok,
+    name: "Tiktok",
+    href: "/entretenimento",
+    child: [
+      {
+        icon: FaUserPlus,
+        name: "Seguidores",
+        href: ""
+      },
+      {
+        icon: AiFillLike,
+        name: "Likes",
+        href: ""
+      },
+      {
+        icon: AiFillEye,
+        name: "Vizualizações",
+        href: ""
+      },
+    ]
   },
   {
-    icon: BsFillPlusSquareFill,
-    name: "Criar",
-    href: "",
+    icon: AiFillYoutube,
+    name: "Youtube",
+    href: "/entretenimento",
+    child: [
+      {
+        icon: FaUserPlus,
+        name: "Seguidores",
+        href: ""
+      },
+      {
+        icon: AiFillLike,
+        name: "Likes",
+        href: ""
+      },
+      {
+        icon: AiFillEye,
+        name: "Vizualizações",
+        href: ""
+      },
+    ]
   },
-  {
-    icon: FaUserAlt,
-    name: "Perfil",
-    href: "/profile",
-  },
-  {
-    icon: BsClockHistory,
-    name: "Recente",
-    href: "",
-  },
+  
 ];
