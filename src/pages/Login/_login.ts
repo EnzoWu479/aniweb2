@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { GlobalButton } from "../../shared/GlobalComponents/GlobalComponents";
 import InputTextGlobal from "../../shared/InputTextGlobal/InputTextGlobal";
-import BackgroundLogin from "../../assets/backgroundLogin.png";
+import BackgroundLogin from "../../assets/backgroundLogin2.jpg";
 
 export const Background = styled.div`
   position: fixed;
@@ -11,6 +11,7 @@ export const Background = styled.div`
   left: 0;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 15% center;
   background-image: url(${BackgroundLogin});
 `;
 export const Container = styled.div`
@@ -18,12 +19,14 @@ export const Container = styled.div`
   width: clamp(25%, 300px, 95vw);
   height: 100vh;
   gap: 20px;
-  right: 50px;
+  right: 0;
+  padding: 0 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  background: linear-gradient(to right, transparent 0%, #fffa 10%);
   @media (max-width: 595px) {
     width: 100vw;
     right: 0;
