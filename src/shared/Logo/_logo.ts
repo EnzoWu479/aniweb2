@@ -4,10 +4,10 @@ interface Props {
   size?: number;
 }
 export const Container = styled.div<Props>`
-  font-family: "Courgette";
+  font-family: "Pacifico";
   font-size: 60px;
   color: #292f33;
-  font-weight: 700;
+  font-weight: 400;
   display: flex;
   align-items: center;
   transition: all ease 0.2s;

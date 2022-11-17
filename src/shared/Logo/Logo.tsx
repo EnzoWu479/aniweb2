@@ -8,8 +8,8 @@ interface Props {
 export default ({ minimized, size }: Props) => {
   return (
     <Container size={size}>
-      A<ToDisappear minimized={minimized}>ni</ToDisappear>W
-      <ToDisappear minimized={minimized}>eb</ToDisappear>
+      R<ToDisappear minimized={minimized}>evengers</ToDisappear>O
+      <ToDisappear minimized={minimized}>fc</ToDisappear>
     </Container>
   );
 };
