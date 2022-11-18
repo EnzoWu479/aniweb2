@@ -15,10 +15,10 @@ export default () => {
   return (
     <Background>
       <Container>
-        <Logo size={60} />
+        <Logo size={60} color="#DBD6CD" />
         <ContainerInput>
           <InputText label="Email" size="medium" />
-          <InputText label="Nome de usuario" size="medium" />
+          <InputText label="Usuario do instagram" size="medium" />
           <InputText label="Nome completo" size="medium" />
           <InputText label="Senha" size="medium" type="password" />
           <Button>Registre-se</Button>

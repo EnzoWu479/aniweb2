@@ -2,16 +2,9 @@ import styled from "styled-components";
 import { GlobalButton } from "../../shared/GlobalComponents/GlobalComponents";
 import InputTextGlobal from "../../shared/InputTextGlobal/InputTextGlobal";
 import BackgroundLogin from "../../assets/backgroundLogin2.jpg";
+import BackgroundStyled from "../../shared/StyledComponents/BackgroundStyled";
 
-export const Background = styled.div`
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 15% center;
+export const Background = styled(BackgroundStyled)`
   background-image: url(${BackgroundLogin});
 `;
 export const Container = styled.div`
@@ -29,6 +22,7 @@ export const Container = styled.div`
   background: linear-gradient(to right, transparent 0%, #fffa 10%);
   @media (max-width: 595px) {
     width: 100vw;
+    padding: 0;
     right: 0;
     left: 0;
     background-color: #fff6;

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 interface Props {
   size?: number;
+  color?: string;
 }
 export const Container = styled.div<Props>`
   font-family: "Pacifico";
@@ -12,6 +13,7 @@ export const Container = styled.div<Props>`
   align-items: center;
   transition: all ease 0.2s;
   ${({ size }) => size && `font-size:${size}px;`}
+  ${({ color }) => color && `color:${color};`}
 `;
 interface DisappearProps {
   minimized?: boolean;
