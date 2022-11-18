@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { GlobalButton } from "../../shared/GlobalComponents/GlobalComponents";
 import InputTextGlobal from "../../shared/InputTextGlobal/InputTextGlobal";
-import BackgroundLogin from "../../assets/backgroundLogin2.jpg";
+import BackgroundLogin from "../../assets/backgroundLogin2.webp";
 import BackgroundStyled from "../../shared/StyledComponents/BackgroundStyled";
 
 export const Background = styled(BackgroundStyled)`
