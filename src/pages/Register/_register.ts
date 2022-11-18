@@ -13,7 +13,7 @@ export const Background = styled(BackgroundStyled)`
   gap: 20px;
 `;
 export const Container = styled.div`
-  width: clamp(25%, 300px, 95vw);
+  width: clamp(25%, 400px, 95vw);
   padding: 25px 5px;
   gap: 20px;
   display: flex;
@@ -38,7 +38,7 @@ export const RegisterText = styled.div`
   justify-content: center;
   gap: 10px;
   color: #DBD6CD;
-  width: clamp(25%, 300px, 95vw);
+  width: clamp(25%, 400px, 95vw);
   padding: 15px 5px;
   background-color: #0009;
   border-radius: 5px;
